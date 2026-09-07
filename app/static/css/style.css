@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 20px;
+    background-color: white;
+}
+
+h1 {
+    color: #10182f;
+}
+
+span {
+    color: #2855d9;
+}
