@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil do Professor - AvaliaAi</title>
+</head>
+<body>
+    <div class="perfil-card">
+        <h1>{{ professor.nome }}</h1>
+        <p><strong>Departamento:</strong> {{ professor.departamento }}</p>
+        
+        <h3>Médias Consolidadas</h3>
+        <ul>
+            <li>Didática: {{ professor.media_didatica }}/5</li>
+            <li>Clareza: {{ professor.media_clareza }}/5</li>
+            <li>Organização: {{ professor.media_organizacao }}/5</li>
+            <li>Disponibilidade: {{ professor.media_disponibilidade }}/5</li>
+            <li>Dificuldade: {{ professor.media_dificuldade }}/5</li>
+        </ul>
+        
+        <!-- Botão que leva para a página de avaliação -->
+        <a href="/avaliar/{{ professor.id }}" class="btn-avaliar">Avaliar este Professor</a>
+    </div>
+</body>
+</html>
